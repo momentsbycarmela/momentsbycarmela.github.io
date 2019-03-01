@@ -31,19 +31,19 @@ body, html {
 
 /* First image (Logo) */
 .bgimg-1 {
-  background-image: url('images/trees.jpg');
+  background-image: url('images/boats.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("images/river.jpg");
+  background-image: url("images/trees.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("images/camera.jpg");
+  background-image: url("images/marble.jpg");
   min-height: 400px;
 }
 
@@ -71,25 +71,20 @@ body, html {
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-item button ctab"><i class="fa fa-home"></i>HOME</a>
-    <a href="#about" class="bar-item button hide-small ctab"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="bar-item button hide-small ctab"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="bar-item button hide-small ctab"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="index.html#home" class="bar-item button ctab"><i class="fa fa-home"></i>HOME</a>
+    <a href="index.html#about" class="bar-item button hide-small ctab"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="index.html#portfolio" class="bar-item button hide-small ctab"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="index.html#contact" class="bar-item button hide-small ctab"><i class="fa fa-envelope"></i> CONTACT</a>
 
    <div class="mydropdown">
       <button class="mydropbtn">
     <a href="gallery.html" class="bar-item button hide-small ctab"><i class="fa fa-camera"></i> GALLERY <i class="fa fa-caret-down ctab"></i></a>
       </button>
       <div class="mydropdown-content">
-        <a href="#about">Link 1</a>
-        <a href="#about">Link 2</a>
-        <a href="#about">Link 3</a>
-        <a href="#about">Link 4</a>
-        <a href="#about">Link 5</a>
-        <a href="#about">Link 6</a>
-        <a href="#about">Link 7</a>
-        <a href="#about">Link 8</a>
-        <a href="#about">Link 9</a>
+        <a href="gallery.html#con1">Spain</a>
+        <a href="gallery.html#con2">Richmond Park</a>
+        <a href="gallery.html#con3">Belgium</a>
+        <a href="#about">Snow Day</a>
       </div>
    </div>
   </div>
@@ -97,11 +92,13 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="bar-block white hide hide-large hide-medium">
-    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="index.html#home" class="bar-item button ctab"><i class="fa fa-home"></i>HOME</a>
+    <a href="index.html#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="index.html#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="index.html#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
     <a href="gallery.html" class="bar-item button" onclick="toggleFunction()">GALLERY</a>
   </div>
+
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 display-container opacity-min" id="home">
@@ -116,7 +113,7 @@ body, html {
 
   <div class="row">
     <div class="col m6 center padding-large">
-      <img src="images/profilepic.jpg" class="round image" alt="Photo of Me" width="500" height="333">
+      <img src="images/1profilepic.jpg" class="round image" alt="Photo of Me" width="500" height="333">
     </div>
 
     <div class="col m6 padding-large">
@@ -155,56 +152,99 @@ body, html {
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 display-container opacity-min">
-  <div class="display-middle">
-    <span class="xxlarge text-white wide">PORTFOLIO</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="content container padding-64" id="portfolio">
-  <h3 class="center">MY WORK</h3>
+<div class="container padding-64" id="portfolio">
   <p class="center"><em>Here are some of my latest shots.<br> You Can See All My Collections In The Gallery</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
     <div class="row-padding center">
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+        <img src="images/portfolio/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The English Countryside">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+        <img src="images/portfolio/2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Waxing The Board ">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+        <img src="images/portfolio/3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+        <img src="images/portfolio/4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
       </div>
     </div>
+
 
     <div class="row-padding center section">
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+        <img src="images/portfolio/5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+        <img src="images/portfolio/6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+        <img src="images/portfolio/7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
       </div>
 
       <div class="col m3">
-        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+        <img src="images/portfolio/8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
       </div>
-    <a href="gallery.html">
-      <button class="button padding-large light-grey" style="margin-top:64px">THE GALLERY</button>
-    </a>
+
     </div>
+
+    <div class="row-padding center">
+      <div class="col m3">
+        <img src="images/portfolio/9.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/10.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/11.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/12.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+
+    <div class="row-padding center section">
+      <div class="col m3">
+        <img src="images/portfolio/13.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/14.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/15.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="col m3">
+        <img src="images/portfolio/16.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+      </div>
+
+      <a href="gallery.html">
+        <button class="button padding-large light-grey" style="margin-top:64px">THE GALLERY</button>
+      </a>
+
+    </div>
+
+
   </div>
+
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="modal black" onclick="this.style.display='none'">
@@ -217,8 +257,8 @@ body, html {
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 display-container opacity-min">
-  <div class="display-middle">
-     <span class="xxlarge text-white wide">CONTACT</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">CONTACT</span>
   </div>
 </div>
 
@@ -229,7 +269,7 @@ body, html {
 
   <div class="row padding-32 section">
     <div class="col m4 container">
-      <img src="images/london.jpg" class="image round" style="width:100%">
+      <img src="images/1londonpic.jpg" class="image round" style="width:100%">
     </div>
     <div class="col m8 panel">
       <div class="large margin-bottom">
@@ -246,12 +286,6 @@ body, html {
 <!-- Footer -->
 <footer class="center black padding-64 opacity">
   <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
-
-  <div class="xlarge section">
-  <a href="https://www.instagram.com"target="_blank">
-     <i class="fa fa-instagram fa-3x hover-opacity"></i>
-  </a>
-  </div>
 
 </footer>
 

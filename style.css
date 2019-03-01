@@ -301,15 +301,35 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*My Dropdown finished */
 
-/*Extra for Gallery Dropdown*/
 
-.myddbtn
-{
-  padding: 14px 16px !important
+/*Sidebar*/
+
+.mysidebar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-.mydropdown-content2 a:hover
-{
+.mysidebar a {
   display: block;
-  background-color: #ddd;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
+
+.mysidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.mycontent {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Sidebar CSS Finish*/

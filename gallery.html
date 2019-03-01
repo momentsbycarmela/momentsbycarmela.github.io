@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MOMENTS BY CARMELA</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Moments by Carmela */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo) */
+.bgimg-1 {
+  background-image: url('images/boats.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("images/river.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("images/camera.jpg");
+  min-height: 400px;
+}
+
+/* colour of the top tabs*/
+.ctab {
+  color: black
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html#home" class="bar-item button ctab"><i class="fa fa-home"></i>HOME</a>
+    <a href="index.html#about" class="bar-item button hide-small ctab"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="index.html#portfolio" class="bar-item button hide-small ctab"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="index.html#contact" class="bar-item button hide-small ctab"><i class="fa fa-envelope"></i> CONTACT</a>
+
+   <div class="mydropdown">
+      <button class="mydropbtn">
+    <a href="gallery.html" class="bar-item button hide-small ctab"><i class="fa fa-camera"></i> GALLERY <i class="fa fa-caret-down ctab"></i></a>
+      </button>
+      <div class="mydropdown-content">
+        <a href="gallery.html#spain">Spain</a>
+        <a href="gallery.html#richmondpark">Richmond Park</a>
+        <a href="gallery.html#belgium">Belgium</a>
+        <a href="gallery.html#snowday">Snow Day</a>
+      </div>
+   </div>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="index.html#home" class="bar-item button ctab"><i class="fa fa-home"></i>HOME</a>
+    <a href="index.html#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="index.html#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="index.html#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="gallery.html" class="bar-item button" onclick="toggleFunction()">GALLERY</a>
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity"> <span class="hide-small">MOMENTS BY</span> CARMELA</span>
+  </div>
+</div>
+
+
+
+<!-- Container 1 -->
+<div class="content container padding-64" id="spain">
+  <h3 class="center">SPAIN</h3>
+  <p class="center"><em>Theese shoots are from a trip i took with my family to the areas around Bilbao in Northern Spain. </em></p><br>
+
+    <div class="row-padding center">
+      <div class="col m3">
+        <img src="images/1spain/s4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="In the famous San Sebastián also known as Donostia there is a mountain you can go up to get the best views, a truly mesmerizing experience.">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1spain/s5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1spain/s3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1spain/s7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+    <div class="row-padding center section">
+      <div class="col m3">
+        <img src="images/1spain/s1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1spain/s2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1spain/s6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Container 2 -->
+  <div class="content container padding-64" id="richmondpark">
+    <h3 class="center">MY WORK</h3>
+    <p class="center"><em>Info about the collection...</em></p><br>
+
+    <div class="row-padding center">
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+
+    <div class="row-padding center section">
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+      </div>
+
+    </div>
+
+    <div class="row-padding center">
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+
+    <div class="row-padding center section">
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="col m3">
+        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+      </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- Container 3 -->
+    <div class="content container padding-64" id="belgium">
+      <h3 class="center">MY WORK</h3>
+      <p class="center"><em>Info about the collection...</em></p><br>
+
+      <div class="row-padding center">
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+        </div>
+      </div>
+
+
+      <div class="row-padding center section">
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+        </div>
+
+      </div>
+
+      <div class="row-padding center">
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+        </div>
+      </div>
+
+
+      <div class="row-padding center section">
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+        </div>
+
+        <div class="col m3">
+          <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+        </div>
+
+      </div>
+      </div>
+
+
+
+      <!-- Container 4 -->
+      <div class="content container padding-64" id="snowday">
+        <h3 class="center">MY WORK</h3>
+        <p class="center"><em>Info about the collection...</em></p><br>
+
+        <div class="row-padding center">
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+          </div>
+        </div>
+
+
+        <div class="row-padding center section">
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+          </div>
+
+        </div>
+
+        <div class="row-padding center">
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+          </div>
+        </div>
+
+
+        <div class="row-padding center section">
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+          </div>
+
+          <div class="col m3">
+            <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+          </div>
+
+        </div>
+        </div>
+
+        <!-- Container 5 -->
+        <div class="content container padding-64" id="hikinginkent">
+          <h3 class="center">MY WORK</h3>
+          <p class="center"><em>Info about the collection...</em></p><br>
+
+          <div class="row-padding center">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+            </div>
+          </div>
+
+
+          <div class="row-padding center section">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+            </div>
+
+          </div>
+
+          <div class="row-padding center">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+            </div>
+          </div>
+
+
+          <div class="row-padding center section">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+            </div>
+
+          </div>
+          </div>
+
+
+        <!-- Container 6 -->
+        <div class="content container padding-64" id="hevercastle">
+          <h3 class="center">MY WORK</h3>
+          <p class="center"><em>Info about the collection...</em></p><br>
+
+          <div class="row-padding center">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+            </div>
+          </div>
+
+
+          <div class="row-padding center section">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+            </div>
+
+          </div>
+
+          <div class="row-padding center">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+            </div>
+          </div>
+
+
+          <div class="row-padding center section">
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+            </div>
+
+            <div class="col m3">
+              <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+            </div>
+
+          </div>
+          </div>
+
+
+
+          <!-- Container 7 -->
+          <div class="content container padding-64" id="cornwallcountry">
+            <h3 class="center">MY WORK</h3>
+            <p class="center"><em>Info about the collection...</em></p><br>
+
+            <div class="row-padding center">
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+              </div>
+            </div>
+
+
+            <div class="row-padding center section">
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+              </div>
+
+            </div>
+
+            <div class="row-padding center">
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+              </div>
+            </div>
+
+
+            <div class="row-padding center section">
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+              </div>
+
+              <div class="col m3">
+                <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+              </div>
+
+            </div>
+            </div>
+
+
+
+            <!-- Container 8 -->
+            <div class="content container padding-64" id="cornwallbeach">
+              <h3 class="center">MY WORK</h3>
+              <p class="center"><em>Info about the collection...</em></p><br>
+
+              <div class="row-padding center">
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                </div>
+              </div>
+
+
+              <div class="row-padding center section">
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                </div>
+
+              </div>
+
+              <div class="row-padding center">
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                </div>
+              </div>
+
+
+              <div class="row-padding center section">
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                </div>
+
+                <div class="col m3">
+                  <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                </div>
+
+              </div>
+              </div>
+
+
+
+              <!-- Container 9 -->
+              <div class="content container padding-64" id="cotswolds">
+                <h3 class="center">MY WORK</h3>
+                <p class="center"><em>Info about the collection...</em></p><br>
+
+                <div class="row-padding center">
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                  </div>
+                </div>
+
+
+                <div class="row-padding center section">
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                  </div>
+
+                </div>
+
+                <div class="row-padding center">
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                  </div>
+                </div>
+
+
+                <div class="row-padding center section">
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                  </div>
+
+                  <div class="col m3">
+                    <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                  </div>
+
+                </div>
+                </div>
+
+
+
+                <!-- Container 10 -->
+                <div class="content container padding-64" id="amsterdam">
+                  <h3 class="center">MY WORK</h3>
+                  <p class="center"><em>Info about the collection...</em></p><br>
+
+                  <div class="row-padding center">
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                    </div>
+                  </div>
+
+
+                  <div class="row-padding center section">
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                    </div>
+
+                  </div>
+
+                  <div class="row-padding center">
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                    </div>
+                  </div>
+
+
+                  <div class="row-padding center section">
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                    </div>
+
+                    <div class="col m3">
+                      <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                    </div>
+
+                  </div>
+                  </div>
+
+
+
+                  <!-- Container 11 -->
+                  <div class="content container padding-64" id="dolly">
+                    <h3 class="center">MY WORK</h3>
+                    <p class="center"><em>Info about the collection...</em></p><br>
+
+                    <div class="row-padding center">
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                      </div>
+                    </div>
+
+
+                    <div class="row-padding center section">
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                      </div>
+
+                    </div>
+
+                    <div class="row-padding center">
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
+                      </div>
+                    </div>
+
+
+                    <div class="row-padding center section">
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+                      </div>
+
+                      <div class="col m3">
+                        <img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+                      </div>
+
+                    </div>
+                    </div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
